@@ -17,7 +17,8 @@ let pkg: Package = new Package({
     },
     Date: new Date("2018/05/31"),
     Description: {
-        inv: "Provides a set of exceptions which can be used when providing PHP-code for WoltLab."
+        inv: "Provides a set of exceptions which can be used when providing PHP-code for WoltLab.",
+        de: "Stellt Exception-Klassen zur Verfügung, welche beim Schreiben von eigenem PHP-Code für WoltLab verwendet werden können."
     },
     InstallInstructions: [
         require(getComponentsPath("Files"))
