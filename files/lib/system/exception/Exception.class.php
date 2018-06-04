@@ -23,13 +23,14 @@
              * Initializes a new instance of the `Exception` class.
              *
              * @param string $message
-             * @param integer $code
-             * @param string $description
-             * @param \Exception $previous
+             * The error message that explains the reason for the exception.
+             * 
+             * @param \Exception $innerException
+             * The exception that is the cause of the current exception, or a `null` reference if no inner exception is specified.
              */
-            public function __construct($message = "", \Exception $previous = null)
+            public function __construct($message = "", \Exception $innerException = null)
             {
-                parent::__construct($message, 0, "", $previous);
+                parent::__construct($message, 0, "", $innerException);
             }
 
             /**
