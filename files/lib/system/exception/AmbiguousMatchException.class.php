@@ -10,7 +10,7 @@
         /**
          * An exception that is thrown when an action results in more than one item matching the criteria.
          */
-        class AmibuousMatchException extends Exception
+        class AmbiguousMatchException extends Exception
         {
         }
     }

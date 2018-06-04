@@ -29,6 +29,12 @@ let pkg: Package = new Package({
             Instructions: [
                 require(getComponentsPath("Files"))
             ]
+        },
+        {
+            FromVersion: "0.0.2",
+            Instructions: [
+                require(getComponentsPath("Files"))
+            ]
         }
     ],
     RequiredPackages: [
