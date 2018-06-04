@@ -23,6 +23,14 @@ let pkg: Package = new Package({
     InstallInstructions: [
         require(getComponentsPath("Files"))
     ],
+    UpdateInstructions: [
+        {
+            FromVersion: "0.0.1",
+            Instructions: [
+                require(getComponentsPath("Files"))
+            ]
+        }
+    ],
     RequiredPackages: [
         new RequiredPackageDescriptor({
             Identifier: "com.woltlab.wcf",
