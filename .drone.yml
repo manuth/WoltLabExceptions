@@ -46,13 +46,8 @@ steps:
         - tag
   - name: create package
     image: node
-    depends_on:
-      - check release prerequisites
     commands:
       - npm run package
-    when:
-      event:
-        - tag
   - name: prepare release notes
     image: alpine
     depends_on:
