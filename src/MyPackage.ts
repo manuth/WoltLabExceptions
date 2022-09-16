@@ -10,7 +10,7 @@ export let MyPackage = new Package(
         DisplayName: {
             [InvariantCultureName]: "Exceptions"
         },
-        Version: "0.0.4",
+        Version: "0.0.5",
         Author: {
             Name: "Manuel Thalmann",
             URL: "https://nuth.ch"
