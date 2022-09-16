@@ -17,9 +17,6 @@
     "url": "https://github.com/manuth/WoltLabExceptions/issues"
   },
   "scripts": {
-    "watch": "tsc -watch -p ./",
-    "compile": "tsc -p ./",
-    "build": "node lib/Program.js",
     "lint": "eslint --max-warnings 0 ./src .eslintrc.cjs",
     "lint-ide": "npm run lint || exit 0",
     "package": "ts-node-esm ./src/index.ts"
