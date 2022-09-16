@@ -1,6 +1,5 @@
 {
   "name": "exceptions",
-  "version": "0.0.4",
   "type": "module",
   "description": "Provides a set of exceptions which can be used when providing PHP-code for WoltLab.",
   "author": "Manuel Thalmann (https://nuth.ch)",
