@@ -46,6 +46,8 @@ steps:
         - tag
   - name: create package
     image: node
+    depends_on:
+      - install
     commands:
       - npm run package
   - name: prepare release notes
