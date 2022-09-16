@@ -1,0 +1,12 @@
+{
+    "extends": "@manuth/tsconfig/recommended",
+    "compilerOptions": {
+        "declaration": true,
+        "module": "Node16",
+        "lib": [
+            "ES2020"
+        ],
+        "plugins": [],
+        "target": "ES6"
+    }
+}

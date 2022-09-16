@@ -1,11 +1,8 @@
 {
-    "files.exclude": {
-        "**/*.js": {
-            "when": "$(basename).ts"
-        },
-        "**/**.js": {
-            "when": "$(basename).tsx"
-        },
-        "**/*.map": {"when": "$(basename)"}
-    }
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true
 }

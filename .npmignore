@@ -106,6 +106,33 @@ dist
 # TernJS port file
 .tern-port
 
+# Source-files
+[Ss]rc/
+
+# TypeScript config-files
+tsconfig.json
+tsconfig.*.json
+
+# Lint config-files
+.eslintrc
+.eslintrc.*
+
+# Source-maps
+[Ll]ib/**/*.map
+
+# Unit-Tests
+.mocharc.*
+[Ll]ib/tests/
+
+# Visual Studio Code-Environment
+.vscode/
+
+# GitHub configuration
+.github/
+
+# Drone configuration
+.drone.yml
+
 # Temporary release-assets
 .tagName.txt
 .tagHeading.txt

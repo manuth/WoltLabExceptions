@@ -1,29 +1,32 @@
 {
-    "name": "exceptions",
-    "version": "0.0.4",
-    "description": "Provides a set of exceptions which can be used when providing PHP-code for WoltLab.",
-    "author": {
-        "name": "Manuel Thalmann",
-        "url": "https://nuth.ch/"
-    },
-    "devDependencies": {
-        "@types/fs-extra": "^5.0.2",
-        "@types/mem-fs-editor": "^4.0.0",
-        "@types/node": "^9.6.18",
-        "@types/tmp": "0.0.33",
-        "fs-extra": "^5.0.0",
-        "mem-fs": "^1.1.3",
-        "mem-fs-editor": "^4.0.2",
-        "tmp": "0.0.33",
-        "typescript": "^2.8.3"
-    },
-    "engines": {
-        "npm": ">= 4.0.0"
-    },
-    "scripts": {
-        "watch": "tsc -watch -p ./",
-        "compile": "tsc -p ./",
-        "build": "node lib/Program.js"
-    },
-    "license": "Apache-2.0"
+  "name": "exceptions",
+  "type": "module",
+  "description": "Provides a set of exceptions which can be used when providing PHP-code for WoltLab.",
+  "author": "Manuel Thalmann (https://nuth.ch)",
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "files": [],
+  "homepage": "https://github.com/manuth/WoltLabExceptions#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuth/WoltLabExceptions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manuth/WoltLabExceptions/issues"
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings 0 ./src .eslintrc.cjs",
+    "lint-ide": "npm run lint || exit 0",
+    "package": "ts-node-esm ./src/index.ts"
+  },
+  "devDependencies": {
+    "@manuth/eslint-plugin-typescript": "^3.3.4",
+    "@manuth/tsconfig": "^3.0.2",
+    "@manuth/woltlab-compiler": "^4.0.5",
+    "@types/node": "^18.7.18",
+    "eslint": "^8.23.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
 }
